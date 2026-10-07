@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace("-","_") }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace("-","_") }}-{{ version }}.tar.gz
   sha256: 786da1252f274b84a326532569337d2fbb872aaad1132b88c72b8de473b9ddf3
 
 
 build:
-  number: 1003
+  number: 1004
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
